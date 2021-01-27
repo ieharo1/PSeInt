@@ -1,0 +1,13 @@
+Algoritmo ComparacionDosNumeros
+	Definir n1, n2 Como Real
+	Escribir "Ingrese un nùmero"
+	Leer n1
+	Escribir "ingrese otro nùmero"
+	Leer n2
+	Escribir "¿Es " n1 " menor que " n2 "?"
+	Si n1<n2 Entonces
+		Escribir "Verdadero"
+	SiNo
+		Escribir "Falso"
+	Fin Si
+FinAlgoritmo

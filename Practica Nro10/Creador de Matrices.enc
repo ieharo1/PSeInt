@@ -1,0 +1,33 @@
+Algoritmo Ejerciciouno
+	Definir n1, n2, n3 Como Entero
+	Escribir "Ingrese el primer nùmero"
+	Leer n1
+	Escribir "Ingrese el segundo nùmero"
+	Leer n2
+	Escribir "Ingrese el tercer nùmero"
+	Leer n3
+	Si (n1<=n2) & (n1<=n3) Entonces
+		Si (n2<=n3) Entonces
+			Imprimir n1 " " , n2 " " , n3;
+		SiNo
+			Imprimir n1 " ", n3 " " , n2;
+		Fin Si
+	Fin Si
+	Si (n2<=n1) & (n2<=n3) Entonces
+		Si (n1<=n3) Entonces
+			Imprimir n2 " ", n1 " " , n3;
+		SiNo
+			Imprimir n2 " ", n3 " " , n1;
+		Fin Si
+	Fin Si
+	Si (n3<=n1) & (n3<=n2) Entonces
+		Si (n1<=n2) Entonces
+			Imprimir n3 " ", n1 " " , n2;
+		SiNo
+			Imprimir n3 " ", n2 " " , n1;
+		Fin Si
+	Fin Si
+	
+	
+	
+FinAlgoritmo

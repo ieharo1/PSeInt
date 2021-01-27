@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE>SELECCION</TITLE>
+	</HEAD>
+	<BODY onload="seleccion();">
+		<SCRIPT type="text/javascript">
+			//Este codigo ha sido generado por el modulo psexport 20180802-w32 de PSeInt.
+			//Es posible que el codigo generado no sea completamente correcto. Si encuentra
+			//errores por favor reportelos en el foro (http://pseint.sourceforge.net).
+
+			function seleccion() {
+				var aux, i, j, min;
+				var v1 = new Array(21);
+				var v1 = new Number();
+				// Genera el arreglo v1 con números al azar
+				for (i=1;i<=20;i++) {
+					v1[i-1] = Math.floor(Math.random()*100);
+				}
+				// Pone el mayor al último y luego repite con los otros elementos
+				for (i=1;i<=20;i++) {
+					min = i;
+					for (j=i;j<=20;j++) {
+						if (v1[j-1]<v1[min-1]) {
+							min = j;
+						}
+					}
+					aux = v1[i-1];
+					v1[i-1] = v1[min-1];
+					v1[min-1] = aux;
+				}
+				// Escribe el arreglo ordenado
+				for (i=1;i<=20;i++) {
+					document.write("posicion ",i," es: ",v1[i-1],'<BR/>');
+				}
+			}
+			
+		</SCRIPT>
+	</BODY>
+</HTML>

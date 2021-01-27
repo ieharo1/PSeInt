@@ -1,0 +1,27 @@
+Algoritmo Calculodeedad
+	Definir Edad  como Real
+	definir opc como Entero
+	Escribir "Ingrese su edad"
+	Leer edad
+	Escribir "Escaoga una de las siguientes opciones"
+	Escribir "1.Edad"
+	Escribir "2.Edad en 10 años"
+	Escribir "3.Edad hace 5 años"
+	Leer opc
+	Segun opc Hacer
+		1:
+			Escribir "su edad es" edad "años"
+		2:
+			Escribir "su edad en 10 años es" edad+10 "años"
+		3:
+			Edad<-Edad-5
+			Si Edad<0 Entonces
+				Escribir "A ocurrido un error"
+			SiNo
+				Escribir "Su edad hace 5 años fue de" Edad "años"
+			Fin Si
+		De Otro Modo:
+			Escribir "No es una opcion valida"
+	Fin Segun
+	
+FinAlgoritmo

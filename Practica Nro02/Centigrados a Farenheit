@@ -1,0 +1,9 @@
+Algoritmo ConversionCentigradosAFarenheit
+	Definir  c,f Como Real
+	Escribir "Conversiòn de grados Celsius a grados Fahrenheit"
+	Escribir "Ingrese el valor en grados Centigrados"
+	Leer c
+	f<-32+9*c/5
+	Escribir "Escribir es: " f " grados Fahrnheit"
+	
+FinAlgoritmo

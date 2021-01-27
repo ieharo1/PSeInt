@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE>BURBUJA</TITLE>
+	</HEAD>
+	<BODY onload="burbuja();">
+		<SCRIPT type="text/javascript">
+			//Este codigo ha sido generado por el modulo psexport 20180802-w32 de PSeInt.
+			//Es posible que el codigo generado no sea completamente correcto. Si encuentra
+			//errores por favor reportelos en el foro (http://pseint.sourceforge.net).
+
+			function burbuja() {
+				var aux, i, j;
+				var v1 = new Array(1001);
+				var v1 = new Number();
+				// Genera el arreglo v1 con números al azar
+				for (i=1;i<=1000;i++) {
+					v1[i-1] = Math.floor(Math.random()*1000);
+				}
+if (!Date.now) {
+			Date.now = function now() {
+			return new Date().getTime();
+			};
+		}
+	var start=Date.now();
+
+
+				// Ordena los elementos de v1 ascendentemente intercambiando posición
+				for (i=2;i<=1000;i++) {
+					for (j=1;j<=1001-i;j++) {
+						if (v1[j-1]>v1[j]) {
+							aux = v1[j-1];
+							v1[j-1] = v1[j];
+							v1[j] = aux;
+
+						}
+					}
+				}
+				// Escribe el arreglo ordenado
+				for (i=1;i<=1000;i++) {
+					document.write("posición ",i," es: ",v1[i-1],'<BR/>');
+				}
+var end=Date.now();
+	prompt(end-start);
+
+			}
+			
+		</SCRIPT>
+	</BODY>
+</HTML>
